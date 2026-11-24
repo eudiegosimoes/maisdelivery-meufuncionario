@@ -11,6 +11,17 @@ Criado por **Diego Simões**
 
 ⭐ **Se isso te ajudar, deixe uma estrela no repositório e me siga no Instagram!** ⭐
 
+<img src="assets/diego-simoes-mais-delivery-juina.webp" alt="Diego Simões na frente da Mais Delivery Juína" width="380">
+
+*Diego Simões na Mais Delivery Juína (MT) — o 1º aplicativo de comida juinense*
+
+> 🙏 *"Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos."*
+> — **Provérbios 16:3**
+
+**Que Deus abençoe cada administrador e franqueado que usar esta ferramenta:
+que ela traga mais tempo para a família, mais pedidos para as lojas,
+mais trabalho para os motoboys e muita prosperidade para a sua cidade.** 🙌
+
 </div>
 
 ---
@@ -322,6 +333,12 @@ para quem vive o dia a dia do delivery.
 [💬 WhatsApp (66) 99696-9693](https://wa.me/5566996969693)
 
 **Quer implantar na sua cidade, tirar dúvidas ou sugerir melhorias? Me chama!**
+
+> *"Tudo o que fizerem, façam de todo o coração, como para o Senhor."*
+> — **Colossenses 3:23**
+
+Fiz esta ferramenta de coração para servir quem trabalha com delivery.
+Que ela seja uma bênção na sua franquia, como tem sido na nossa. 🙏
 
 ⭐ Deixe uma estrela · 🔁 Compartilhe com outros franqueados · 📸 Me siga no Instagram
 
