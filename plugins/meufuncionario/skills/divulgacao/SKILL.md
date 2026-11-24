@@ -31,3 +31,10 @@ description: Faz a divulgação dos parceiros da cidade — arte "Parceiro Confi
   (op 167 valida/salva). ⚠️ Envio chega aos clientes: sempre pedir confirmação.
 - Cupom da cidade `cupom.php` (gerencial) ou da loja (lojista); promoções `promocoes.php` → `promocao_detalhe.php`.
 - Carrinhos abandonados (`carrinhos_abandonados.php`) e relatório 57 (acessou e não pediu) para remarketing.
+
+## Regras confirmadas em teste (24/11/2026)
+- Promoção (`promocao_detalhe.php`): exige imagem, pelo menos 1 produto e preço menor que o original.
+  Itens `idCardapio[]`, `idSabor[]`, `qtItem[]`, `vlNormal[]`, `vlDesconto[]` — **valores com vírgula**
+  (com ponto o painel multiplica por 100). Datas `dd/mm/aaaa`, horas `hh:mm`.
+- Cupom da loja (`cupom.php`): `idTpDesconto` 1 = %, 0 = R$, 2 = frete grátis; `flgAtivo` 0 deixa pronto sem valer.
+- Sugeridos ("peça também", até 5 por produto): ops 149/145/147/148 — bom para aumentar o ticket.

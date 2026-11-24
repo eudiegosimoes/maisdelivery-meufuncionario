@@ -94,6 +94,42 @@ Abrir com `action=edt` só **lê** o formulário; quem grava é o Salvar.
 - 17 / 46 / 214 / 155 / 156 cobranças · 94 / 172 sorteio de prêmios · 215 estorno de cashback.
 - 130 / 132 desativa/remove iFood · 85 empresa integrada.
 
+## Testes de gravação na loja de testes (24/11/2026)
+Tudo criado com "TESTE" e apagado no fim; configuração e estabelecimento
+restaurados sem diferença; loja ficou FECHADA o tempo todo.
+
+**Como confirmar que salvou:** forms redirecionam para `<tela>.php?dsRetorno=OK&dsMensagem=...`
+(nem todos; na dúvida, **ler de novo** e comparar). Operações ajax devolvem
+`{"retorno":"OK","mensagem":...}` (op 113 e 180 devolvem vazio, mas gravam).
+
+| Testado | Resultado / regra aprendida |
+|---|---|
+| Categoria `categoria_item.php` action=ins (`dsCategoria`, `flgAtivo`) | OK. O sufixo " - Loja" **não** é automático. |
+| Produto `produto_detalhe.php` ins/upd (multipart) | OK. Foto vai em `dsImagem` → `/api/imagens/v2/produtos/<id>_<n>.jpg`; upd sem `dsImagem` mantém a foto. |
+| Estoque do produto | ⚠️ vazio ou 0 = **Disponível: Não** (some do app). Usar **999999** = sem limite (padrão das lojas). |
+| Horário do produto (`sun_1_open`… 2 turnos/dia) | ⚠️ preencher um dia deixa o produto **indisponível nos outros**. Deixar tudo vazio = sempre. |
+| Ops rápidas 31/113/153/27/171/151 | OK (preço com vírgula). |
+| Copiar produto (`action=cp`, `qtCopias`) | Copia com o mesmo nome; ⚠️ **não copia os níveis**, mas mantém "usa níveis = Sim". |
+| Lote (+AÇÕES) | `action=Ativa/DesativaProduto` ou `edtImpressaoDescricao` + `idCardapio[]` + `flgAtivaDesativa` 1/0; excluir: `action=del` + `idCardapio[]`. |
+| Ordem das categorias | POST `produtos.php` `categoriaOrdem=[{"id":..},…]` (lista inteira na ordem). |
+| Nível `nivel_cardapio.php` | ⚠️ **por Produto exige `idCategoria=0` e `idSubCategoria=0`**; se vier categoria junto, vira nível da categoria. O produto precisa de `flgNiveis=1` (não liga sozinho). |
+| Opção `opcoes_nivel_cardapio.php` ins | OK. Se o nível tem `flgControlaEstoque=1`, a opção nasce com **estoque 0** → ajustar (op 180). |
+| Copiar nível (`action=cp`) | Cria a cópia já **com as opções**. |
+| Sabor / Adicional (telas antigas) | OK; preço rápido ops 37/39. Lista filtra com POST `idCategoria`. |
+| Subcategoria | ⚠️ o select de categoria traz as **3.755 categorias da cidade**: escolher a da loja. |
+| Sugeridos ("peça também") | ops 149 add / 145 lista / 147 remove / 148 ordena; `tpSugerido` cardapio/categoria/subCategoria; máx. 5. |
+| Configuração `configuracao.php` | ⚠️ **bug confirmado**: taxa "4.00" com ponto gravou **R$ 400,00**. Sempre reenviar todas as `vlEntrega` com vírgula. |
+| Bairro na loja | remover op 9 (`idEntrega`); incluir = repostar o form com `nrBairros[]`+`vlEntrega[]` novos. |
+| Estabelecimento upd | OK; só muda o que foi alterado; sem `dsImagem` mantém a logo. |
+| Status op 18 | 2 Fechado ↔ 0 Inativo OK. |
+| Promoção `promocao_detalhe.php` | Exige imagem, ≥1 produto, preço menor. Itens `idCardapio[]`,`idSabor[]`,`qtItem[]`,`vlNormal[]`,`vlDesconto[]`. ⚠️ itens com ponto viraram ×100 — **enviar com vírgula**. Datas `dd/mm/aaaa`, hora `hh:mm`. |
+| Cupom da loja | OK (`idTpDesconto` 1 %, 0 R$, 2 frete grátis). |
+| Mesa | Número obrigatório; nome máx. 15 caracteres; ativo op 63. |
+| Lançar pedido `tele_entrega.php` | Não tem itens: cliente (busca pelo telefone, op 29), entrega/balcão, valor, pagamento, situação inicial. Aparece no kanban como "Pedido Lançado". |
+| Cancelar pedido | Em `detalhes_pedido.php?id=<base64>` → Situação "Cancelado" → motivo da lista + texto ≥ 20 caracteres (**o cliente vê**). |
+| Funcionário / Entregador | **Não testado de propósito**: criam conta de login com senha. |
+| Comanda | Menu abre `/comanda/` (app separado de garçom). |
+
 ## Tour 1 — Gerencial da cidade (24/11/2026, Aripuanã)
 
 Feito só com GET (fetch + leitura do HTML), 6 s entre telas, nada salvo.

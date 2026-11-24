@@ -37,3 +37,10 @@ description: Cadastra uma loja nova no painel do Mais Delivery (e no 1menu, se h
 
 ## Conferir no fim
 Coordenada, horário (domingo limpo), taxas iguais às da vizinha, integrador OK/OK, status Fechado, logo.
+
+## Regras confirmadas em teste (24/11/2026)
+- `estabelecimento.php` upd: mandar o form inteiro como veio, sem `dsImagem`, mudando só o necessário; a logo fica.
+- `configuracao.php`: `idEntrega` 1 entrega / 2 balcão / 3 ambos; `tpEntregadores` 1 internos / 2 Mais Delivery;
+  `tpTaxaEntrega` 1 da loja / 2 do gerencial; `idAceitar`/`idConclusao` = tempos máximos.
+- Status op 18: 2 Fechado (padrão de loja nova), 0 Inativo, 1 Aberto (**nunca abrir sem o lojista**).
+- Lançar pedido manual (`tele_entrega.php`) e cancelar (motivo + texto ≥ 20, o cliente vê) — ver MAPA.

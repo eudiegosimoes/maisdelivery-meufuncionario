@@ -10,6 +10,9 @@ description: Configura taxas de entrega por bairro no Mais Delivery — copiar d
 ## Regra de ouro
 Ao postar `configuracao.php`, **sempre** regravar todas as `vlEntrega[][<linha>]` com `MD.virg` (vírgula). O form traz "6.00" e o MD lê 600 (ou 999,99).
 
+Confirmado ao vivo em 24/11/2026 na loja de testes: "4.00" virou R$ 400,00.
+Incluir bairro = repostar o form com `nrBairros[]`/`vlEntrega[]` novos; remover = op 9 (`idEntrega`).
+
 ## Copiar taxas de uma vizinha
 1. Ler `configuracao.php` da vizinha: cada `select[name^="nrBairros"]` + `vlEntrega[][<linha>]`.
 2. Loja nova: `MD.configurar(id, ini, bairros, pagamentos, entrega)`.

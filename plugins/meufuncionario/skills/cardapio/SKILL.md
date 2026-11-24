@@ -70,6 +70,15 @@ Ativar/Desativar descrição na impressão.
 (milhares de linhas), por isso cada loja usa o sufixo no nome, ex.:
 `LANCHES - L.A LANCHES`. Sempre filtrar pelo sufixo da loja.
 
+## Regras confirmadas em teste (24/11/2026)
+- Estoque vazio/0 = produto **indisponível**. Usar 999999 (o `md-tools.js` já faz).
+- Não preencher horário do produto, a menos que o lojista peça (restringe a venda aos dias preenchidos).
+- Nível por produto: `nivelPor=2`, `idCategoria=0`, `idSubCategoria=0`, `idCardapio=<id>`; e ligar `flgNiveis=1` no produto.
+- Nível com controle de estoque: opções nascem com estoque 0 → op 180.
+- Copiar produto não leva os níveis; copiar nível leva as opções.
+- Valores sempre com vírgula (inclusive itens de promoção); o painel mostra com ponto, mas é só exibição.
+- Confirmar gravação lendo de novo a lista/edição.
+
 ## Cuidados
 - Não inventar sabores/produtos: o que for deduzido (ex.: sabor pela foto) deve ser avisado ao franqueado.
 - Produto sem preço: R$ 0,00 **inativo**.
