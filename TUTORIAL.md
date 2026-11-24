@@ -7,14 +7,17 @@
 São **7 passos** e leva uns **15 minutos**. Você faz **uma vez só**.
 Não precisa saber programar.
 
-> As imagens abaixo são **ilustrações** para te guiar. As telas de verdade podem ser um
-> pouco diferentes, mas os botões e os nomes são os mesmos.
+> Os cartões coloridos são **ilustrações** para te guiar. Onde aparece **📸 Tela de verdade**, é o print real do site.
 
 ---
 
 ## Passo 1 — Crie sua conta do Claude
 
 ![Passo 1](assets/tutorial/passo-1-conta.svg)
+
+**📸 Tela de verdade** — os planos em [claude.com/pricing](https://claude.com/pricing). Escolha **Pro** ou **Max** (os preços podem mudar):
+
+![Print real: planos do Claude](assets/tutorial/prints/passo-1-planos.jpg)
 
 1. Abra **[claude.ai](https://claude.ai)** no navegador.
 2. Faça o cadastro com o seu e-mail.
@@ -27,6 +30,10 @@ Não precisa saber programar.
 ## Passo 2 — Baixe o aplicativo do Claude
 
 ![Passo 2](assets/tutorial/passo-2-aplicativo.svg)
+
+**📸 Tela de verdade** — página de download. Clique em **Download for Windows** (no Mac aparece o botão do Mac):
+
+![Print real: download do Claude](assets/tutorial/prints/passo-2-download.jpg)
 
 1. Abra **[claude.ai/download](https://claude.ai/download)**.
 2. Baixe a versão para o seu computador (**Windows** ou **Mac**) e instale.
@@ -41,6 +48,10 @@ Não precisa saber programar.
 ## Passo 3 — Instale a extensão "Claude in Chrome"
 
 ![Passo 3](assets/tutorial/passo-3-extensao.svg)
+
+**📸 Tela de verdade** — página da extensão em [claude.com/chrome](https://claude.com/chrome). Clique em **Add to Chrome**:
+
+![Print real: Claude in Chrome](assets/tutorial/prints/passo-3-extensao.jpg)
 
 1. Abra o **Google Chrome**.
 2. Entre na **Chrome Web Store** e procure **"Claude in Chrome"**.
@@ -99,6 +110,10 @@ Não precisa saber programar.
 ## Passo 7 — Agora é só pedir!
 
 ![Passo 7](assets/tutorial/passo-7-pedir.svg)
+
+**📸 Tela de verdade** — o Meu Funcionário respondendo:
+
+![Print real: o plugin respondendo](assets/tutorial/prints/passo-7-resposta.png)
 
 Na sessão do Claude, escreva o que precisa, do jeito que falaria com um funcionário:
 
