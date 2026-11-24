@@ -1,0 +1,22 @@
+# segredos e logins
+.env
+.env.*
+*.key
+*secret*
+*credenciais*
+*credentials*
+.claude/settings.local.json
+
+# dados de clientes/lojas baixados durante o trabalho
+dados/
+cidades/
+*.zip
+*.tmp
+fotos/
+logos/
+saida/
+
+# sistema
+node_modules/
+.DS_Store
+Thumbs.db

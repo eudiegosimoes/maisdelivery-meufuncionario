@@ -1,0 +1,8 @@
+{
+  "name": "meufuncionario",
+  "description": "Seu funcionário para o Mais Delivery: cadastra lojas, sobe cardápios com fotos, ajusta taxas, ativa motoboys, divulga parceiros e audita a cidade.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Meu Funcionário"
+  }
+}

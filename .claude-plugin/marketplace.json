@@ -1,0 +1,13 @@
+{
+  "name": "maisdelivery-meufuncionario",
+  "owner": {
+    "name": "Meu Funcionário"
+  },
+  "plugins": [
+    {
+      "name": "meufuncionario",
+      "source": "./plugins/meufuncionario",
+      "description": "Opera o painel do Mais Delivery: cadastro de lojas, cardápios, taxas, motoboys, divulgação e auditoria."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+name: divulgacao
+description: Faz a divulgação dos parceiros da cidade — arte "Parceiro Confirmado" com o logo de cada loja, stories e posts no feed do Instagram/Facebook pelo Meta Business Suite, com legenda pensada para o Google. Use para "faz a arte dos parceiros", "posta nos stories", "posta no feed".
+---
+
+# Divulgação
+
+## Arte "Parceiro Confirmado"
+- Modelo: `ferramentas/artes/modelo-parceiro-confirmado.webp` (941×1672). Logo no círculo: centro (464,5; 929,5), raio 299.
+- Logo: usar o **atual do MD** (`estabelecimento.php` edt → `img` em `api/imagens/v2/...`). Baixar com cabeçalho de navegador (`curl -L -A ...`).
+- Logo quadrado: cobrir o círculo; logo retangular: caber inteiro com fundo branco.
+- Só lojas **Ativas e Fechadas** no MD (Inativas ficam de fora).
+- Gerar no Chrome e baixar num zip só (o Chrome bloqueia vários downloads por aba).
+- Montar folha de conferência (`ferramentas/artes/folha.ps1`) e mostrar ao franqueado antes de publicar.
+
+## Stories (Meta Business Suite)
+- `latest/story_composer`, até 10 imagens por envio, 1080×1920 (`jpg.ps1`).
+- O botão "Adicionar foto/vídeo" cria um input solto: interceptar `HTMLInputElement.prototype.click`, anexar ao body e usar o upload de arquivo.
+- Conferir na agenda (`latest/content_calendar`): o Instagram às vezes perde algum; repostar só no IG.
+
+## Feed
+- Arte 4:5 (1080×1350, `feed.ps1`).
+- Legenda: nome + "em Aripuanã" na 1ª linha, produtos reais do cardápio, bairro, chamada para o app e hashtags locais. Nada inventado (sem horário, preço ou "melhor da cidade").
+- Colar a legenda com Ctrl+V real (`clip.ps1` coloca na área de transferência); colar por script embaralha o editor.
+- Perguntar o ritmo ao franqueado (tudo de uma vez derruba o alcance).
