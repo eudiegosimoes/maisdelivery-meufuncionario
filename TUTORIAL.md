@@ -66,6 +66,10 @@ Não precisa saber programar.
 
 ![Passo 4](assets/tutorial/passo-4-plugin.svg)
 
+**📸 Tela do Claude** (o comando foi escrito por cima da tela real, para mostrar onde colar):
+
+![Tela do Claude: onde colar o comando](assets/tutorial/prints/passo-4-comandos.jpg)
+
 1. No aplicativo do Claude, aba **Code**, clique em **nova sessão**.
 2. Copie o **primeiro comando** abaixo, cole na caixa de mensagem e aperte **Enter**:
 
@@ -87,6 +91,10 @@ Não precisa saber programar.
 
 ![Passo 5](assets/tutorial/passo-5-confiar.svg)
 
+**📸 Tela do Claude** — clique em **Criar** para abrir a nova sessão:
+
+![Tela do Claude: nova sessão](assets/tutorial/prints/passo-5-nova-sessao.jpg)
+
 1. Se aparecer uma pergunta para **confiar** no plugin, confirme.
 2. Depois, abra **outra nova sessão**. É nela que o Meu Funcionário já aparece carregado.
 
@@ -97,6 +105,10 @@ Não precisa saber programar.
 ## Passo 6 — Entre no painel do Mais Delivery
 
 ![Passo 6](assets/tutorial/passo-6-painel.svg)
+
+**📸 Tela de verdade** — a entrada do painel. Você digita e-mail e senha e marca o "Não sou um robô":
+
+![Print real: login do painel](assets/tutorial/prints/passo-6-login.jpg)
 
 1. No **Chrome**, abra o painel do Mais Delivery.
 2. Faça o login **você mesmo**, com seu usuário e senha.
