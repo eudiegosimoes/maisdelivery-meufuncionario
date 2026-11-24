@@ -23,3 +23,11 @@ description: Faz a divulgação dos parceiros da cidade — arte "Parceiro Confi
 - Legenda: nome + "em Aripuanã" na 1ª linha, produtos reais do cardápio, bairro, chamada para o app e hashtags locais. Nada inventado (sem horário, preço ou "melhor da cidade").
 - Colar a legenda com Ctrl+V real (`clip.ps1` coloca na área de transferência); colar por script embaralha o editor.
 - Perguntar o ritmo ao franqueado (tudo de uma vez derruba o alcance).
+
+## Caminhos no painel (varredura 24/11/2026)
+- Link da loja para divulgar: lojista → Outros → Divulgar Loja (`compartilhar_loja.php`).
+- Banners do app: `banners.php` (op 32 traz os produtos da loja escolhida).
+- Push: `lista_notificacoes.php` → `notificacao.php`; e-mail `email_divulgacao.php`; SMS `sms_divulgacao.php`
+  (op 167 valida/salva). ⚠️ Envio chega aos clientes: sempre pedir confirmação.
+- Cupom da cidade `cupom.php` (gerencial) ou da loja (lojista); promoções `promocoes.php` → `promocao_detalhe.php`.
+- Carrinhos abandonados (`carrinhos_abandonados.php`) e relatório 57 (acessou e não pediu) para remarketing.

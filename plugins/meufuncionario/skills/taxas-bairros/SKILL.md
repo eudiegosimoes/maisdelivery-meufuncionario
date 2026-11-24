@@ -27,5 +27,9 @@ Gerencial `bairro.php` (action=ins) e depois acrescentar `nrBairros[]`/`vlEntreg
   `tpEstPodeAltTxEntrega` (se a loja pode mudar a própria taxa) e `vlEntregaExtra`
   (acréscimo em todas as entregas). Conferir esses antes de mexer loja por loja.
 
+- Operações (em `configuracao.js` e `valores_entrega_gerencial.js`): 8 eventos de
+  bairro, 9/10 apagam linha (`idEntrega`), 158/159 em lote (`arrIdEntregas`) ⚠️.
+  Bairro existe? op 89 (`dsBairro`, `idCidade`). Taxa calculada p/ um endereço: op 68/105.
+
 ## Taxa mínima
 Pedir o valor ao franqueado, guardar cópia antes, atualizar só o que estiver abaixo e conferir loja por loja (uma loja por vez, ~6 s entre lojas).

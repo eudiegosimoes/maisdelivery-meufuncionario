@@ -23,5 +23,17 @@ description: Cadastra uma loja nova no painel do Mais Delivery (e no 1menu, se h
 8. Status **Fechado** até o lojista começar: op 18, `flgAtivo=2`.
 9. Cardápio: skill `cardapio`.
 
+## Atalhos que o tour mostrou (24/11/2026)
+- Antes de criar do zero, olhar Marketplace → **Recebidos / Em análise**
+  (`estabelecimentos_recebidos.php`, lojas que se cadastraram sozinhas) e
+  **Estabelecimentos Nacionais** (botão OBTER, para redes como Cacau Show).
+- `estabelecimento.php` tem 79 campos: até 4 segmentos (`idCategoria_1..4`),
+  3 turnos por dia (`sun_1_open` … `sat_3_close`), `flgAparecerApp`,
+  `flgCalculaTempo`, `idMetaPixel`, `dsGoogleTagManager`, `dsGoogleAnalytics`.
+- `configuracao.php` (37 campos + bairros): cupons, cashback, CPF obrigatório,
+  valor mínimo, entregadores internos/da cidade (`tpEntregadores`), taxa do
+  estabelecimento ou da cidade (`tpTaxaEntrega`), frete grátis, gateway e
+  `pagamentos_online[]` / `pagamentos_offline[]`.
+
 ## Conferir no fim
 Coordenada, horário (domingo limpo), taxas iguais às da vizinha, integrador OK/OK, status Fechado, logo.
