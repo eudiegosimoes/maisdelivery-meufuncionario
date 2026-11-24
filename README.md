@@ -163,6 +163,8 @@ Você **não precisa saber programar**. Precisa só conversar.
 
 Leva uns 15 minutos. Você só faz uma vez.
 
+### 🎬 [Assistir ao vídeo do tutorial (3 minutos, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
+
 ### 👉 [Abrir o tutorial ilustrado, com uma imagem em cada passo](TUTORIAL.md)
 
 [![Tutorial ilustrado: como instalar o Meu Funcionário](assets/tutorial/capa.svg)](TUTORIAL.md)
