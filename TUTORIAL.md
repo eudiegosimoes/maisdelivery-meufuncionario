@@ -2,7 +2,7 @@
 
 ![Como instalar o Meu Funcionário](assets/tutorial/capa.svg)
 
-### 🎬 Prefere assistir? [Clique aqui para ver o vídeo (3 minutos, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
+### 🎬 Prefere assistir? [Clique aqui para ver o vídeo (menos de 1 minuto, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
 
 São **7 passos** e leva uns **15 minutos**. Você faz **uma vez só**.
 Não precisa saber programar.

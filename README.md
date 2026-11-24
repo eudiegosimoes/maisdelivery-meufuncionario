@@ -163,7 +163,7 @@ Você **não precisa saber programar**. Precisa só conversar.
 
 Leva uns 15 minutos. Você só faz uma vez.
 
-### 🎬 [Assistir ao vídeo do tutorial (3 minutos, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
+### 🎬 [Assistir ao vídeo do tutorial (menos de 1 minuto, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
 
 ### 👉 [Abrir o tutorial ilustrado, com uma imagem em cada passo](TUTORIAL.md)
 
