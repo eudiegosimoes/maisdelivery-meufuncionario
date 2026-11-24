@@ -163,6 +163,12 @@ Você **não precisa saber programar**. Precisa só conversar.
 
 Leva uns 15 minutos. Você só faz uma vez.
 
+### 👉 [Abrir o tutorial ilustrado, com uma imagem em cada passo](TUTORIAL.md)
+
+[![Tutorial ilustrado: como instalar o Meu Funcionário](assets/tutorial/capa.svg)](TUTORIAL.md)
+
+Resumo dos passos (os detalhes e as imagens estão no [tutorial](TUTORIAL.md)):
+
 ### ✅ Passo 1 — Tenha uma conta do Claude
 Crie sua conta em [claude.ai](https://claude.ai). Para usar o Claude Code, é preciso um **plano pago
 do Claude** (Pro ou Max). *Esse custo é da Anthropic; o Meu Funcionário é grátis.*

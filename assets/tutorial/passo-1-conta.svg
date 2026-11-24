@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C8102E"/><stop offset="1" stop-color="#9E0B23"/></linearGradient>
+    <marker id="ponta" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#FFC72C"/></marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="url(#fundo)"/>
+  <rect x="24" y="24" width="1152" height="627" rx="22" fill="#fff"/>
+  <!-- coluna de texto -->
+  <circle cx="110" cy="120" r="54" fill="#FFC72C"/>
+  <text x="110" y="140" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="800" fill="#9E0B23" text-anchor="middle">1</text>
+  <text x="70" y="230" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="#1F1F24" text-anchor="start">Crie sua conta</text><text x="70" y="280" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="#1F1F24" text-anchor="start">do Claude</text>
+  <text x="70" y="350" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">Entre em claude.ai e faça</text><text x="70" y="390" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">seu cadastro. Para o Claude Code</text><text x="70" y="430" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">é preciso o plano Pro ou Max.</text>
+  <rect x="70" y="545" width="430" height="64" rx="14" fill="#FFF6D9"/><text x="92" y="586" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#7A5A00" text-anchor="start">💡 O Meu Funcionário é grátis</text>
+  <text x="1140" y="629" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#A0A0AA" text-anchor="end">Meu Funcionário · @eudiegosimoes</text>
+  <!-- ilustração -->
+  
+  <g>
+    <rect x="566" y="100" width="580" height="470" rx="18" fill="#000" opacity="0.08"/>
+    <rect x="560" y="90" width="580" height="470" rx="18" fill="#fff" stroke="#E2E2E8" stroke-width="2"/>
+    <rect x="560" y="90" width="580" height="52" rx="18" fill="#F4F4F6"/>
+    <rect x="560" y="124" width="580" height="18" fill="#F4F4F6"/>
+    <circle cx="586" cy="116" r="7" fill="#FF5F57"/><circle cx="608" cy="116" r="7" fill="#FEBC2E"/><circle cx="630" cy="116" r="7" fill="#28C840"/>
+    <rect x="660" y="102" width="450" height="28" rx="14" fill="#fff" stroke="#DADAE0"/><text x="678" y="122" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#5B5B66" text-anchor="start">claude.ai</text>
+    <text x="850" y="260" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#1F1F24" text-anchor="middle">Bem-vindo ao Claude</text>
+       <rect x="680" y="300" width="340" height="50" rx="12" fill="#F4F4F6" stroke="#DADAE0"/><text x="700" y="333" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#9A9AA5" text-anchor="start">seu e-mail</text>
+       <rect x="680" y="375" width="340" height="48" rx="24" fill="#C8102E"/><text x="850" y="407" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">Continuar</text>
+       <text x="850" y="470" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#5B5B66" text-anchor="middle">Depois escolha o plano Pro ou Max</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C8102E"/><stop offset="1" stop-color="#9E0B23"/></linearGradient>
+    <marker id="ponta" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#FFC72C"/></marker>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="url(#fundo)"/>
+  <rect x="24" y="24" width="1152" height="627" rx="22" fill="#fff"/>
+  <!-- coluna de texto -->
+  <circle cx="110" cy="120" r="54" fill="#FFC72C"/>
+  <text x="110" y="140" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="800" fill="#9E0B23" text-anchor="middle">4</text>
+  <text x="70" y="230" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="#1F1F24" text-anchor="start">Instale o</text><text x="70" y="280" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="#1F1F24" text-anchor="start">Meu Funcionário</text>
+  <text x="70" y="350" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">No app do Claude, aba Code,</text><text x="70" y="390" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">abra uma nova sessão e cole</text><text x="70" y="430" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="400" fill="#5B5B66" text-anchor="start">os 2 comandos (um de cada vez).</text>
+  <rect x="70" y="545" width="430" height="64" rx="14" fill="#FFF6D9"/><text x="92" y="586" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#7A5A00" text-anchor="start">📋 Copie os comandos do README</text>
+  <text x="1140" y="629" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#A0A0AA" text-anchor="end">Meu Funcionário · @eudiegosimoes</text>
+  <!-- ilustração -->
+  
+  <g>
+    <rect x="566" y="100" width="580" height="470" rx="18" fill="#000" opacity="0.08"/>
+    <rect x="560" y="90" width="580" height="470" rx="18" fill="#fff" stroke="#E2E2E8" stroke-width="2"/>
+    <rect x="560" y="90" width="580" height="52" rx="18" fill="#F4F4F6"/>
+    <rect x="560" y="124" width="580" height="18" fill="#F4F4F6"/>
+    <circle cx="586" cy="116" r="7" fill="#FF5F57"/><circle cx="608" cy="116" r="7" fill="#FEBC2E"/><circle cx="630" cy="116" r="7" fill="#28C840"/>
+    
+    <text x="590" y="180" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#5B5B66" text-anchor="start">Claude  ›  Code  ›  Nova sessão</text>
+       <rect x="590" y="205" width="520" height="120" rx="12" fill="#1E1E24"/>
+       <text x="610" y="250" font-family="Consolas, 'Courier New', monospace" font-size="21" font-weight="400" fill="#FFD666" text-anchor="start">/plugin marketplace add</text>
+       <text x="610" y="282" font-family="Consolas, 'Courier New', monospace" font-size="21" font-weight="400" fill="#E6E6EA" text-anchor="start">  eudiegosimoes/maisdelivery-</text>
+       <text x="610" y="312" font-family="Consolas, 'Courier New', monospace" font-size="21" font-weight="400" fill="#E6E6EA" text-anchor="start">  meufuncionario</text>
+       <rect x="590" y="345" width="520" height="92" rx="12" fill="#1E1E24"/>
+       <text x="610" y="383" font-family="Consolas, 'Courier New', monospace" font-size="21" font-weight="400" fill="#FFD666" text-anchor="start">/plugin install meufuncionario@</text>
+       <text x="610" y="415" font-family="Consolas, 'Courier New', monospace" font-size="21" font-weight="400" fill="#E6E6EA" text-anchor="start">  maisdelivery-meufuncionario</text>
+       <text x="600" y="490" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#9E0B23" text-anchor="start">1º comando → Enter · 2º comando → Enter</text>
+  </g>
+</svg>
