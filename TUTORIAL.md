@@ -15,7 +15,7 @@ Não precisa saber programar.
 
 ![Passo 1](assets/tutorial/passo-1-conta.svg)
 
-**📸 Tela de verdade** — os planos em [claude.com/pricing](https://claude.com/pricing). Escolha **Pro** ou **Max** (os preços podem mudar):
+**📸 Tela de verdade** (o site é em inglês; as marcações em vermelho mostram onde clicar) — os planos em [claude.com/pricing](https://claude.com/pricing). Escolha **Pro** ou **Max** (os preços podem mudar):
 
 ![Print real: planos do Claude](assets/tutorial/prints/passo-1-planos.jpg)
 
@@ -31,7 +31,7 @@ Não precisa saber programar.
 
 ![Passo 2](assets/tutorial/passo-2-aplicativo.svg)
 
-**📸 Tela de verdade** — página de download. Clique em **Download for Windows** (no Mac aparece o botão do Mac):
+**📸 Tela de verdade** (o site é em inglês; as marcações em vermelho mostram onde clicar) — página de download. Clique em **Download for Windows** (no Mac aparece o botão do Mac):
 
 ![Print real: download do Claude](assets/tutorial/prints/passo-2-download.jpg)
 
@@ -49,7 +49,7 @@ Não precisa saber programar.
 
 ![Passo 3](assets/tutorial/passo-3-extensao.svg)
 
-**📸 Tela de verdade** — página da extensão em [claude.com/chrome](https://claude.com/chrome). Clique em **Add to Chrome**:
+**📸 Tela de verdade** (o site é em inglês; as marcações em vermelho mostram onde clicar) — página da extensão em [claude.com/chrome](https://claude.com/chrome). Clique em **Add to Chrome**:
 
 ![Print real: Claude in Chrome](assets/tutorial/prints/passo-3-extensao.jpg)
 
@@ -111,7 +111,7 @@ Não precisa saber programar.
 
 ![Passo 7](assets/tutorial/passo-7-pedir.svg)
 
-**📸 Tela de verdade** — o Meu Funcionário respondendo:
+**📸 Tela de verdade** (o site é em inglês; as marcações em vermelho mostram onde clicar) — o Meu Funcionário respondendo:
 
 ![Print real: o plugin respondendo](assets/tutorial/prints/passo-7-resposta.png)
 
