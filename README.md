@@ -27,7 +27,8 @@ Criado por **Diego Simões**
 9. [Perguntas frequentes](#-perguntas-frequentes)
 10. [O que tem dentro do repositório](#-o-que-tem-dentro-do-repositório)
 11. [Aviso importante](#%EF%B8%8F-aviso-importante)
-12. [Sobre o autor e contato](#-sobre-o-autor-e-contato)
+12. [Licença](#-licença)
+13. [Sobre o autor e contato](#-sobre-o-autor-e-contato)
 
 ---
 
@@ -294,6 +295,16 @@ só para dizer com qual painel a ferramenta trabalha.
 Use por sua conta e risco, **sempre com o seu próprio login** e respeitando o contrato da sua
 franquia. O painel pode mudar a qualquer momento, e o autor não se responsabiliza por alterações
 feitas nas suas lojas.
+
+---
+
+## 📜 Licença
+
+Distribuído sob a **Licença Apache 2.0** ([LICENSE](LICENSE)). Você pode usar, copiar e modificar,
+inclusive para fins comerciais, **desde que mantenha o arquivo [NOTICE](NOTICE)** com a autoria de
+**Diego Simões** e os contatos — inclusive em versões modificadas e redistribuídas.
+
+Copyright © 2026 Diego Simões.
 
 ---
 

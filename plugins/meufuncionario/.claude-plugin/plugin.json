@@ -8,5 +8,6 @@
   },
   "homepage": "https://github.com/eudiegosimoes/maisdelivery-meufuncionario",
   "repository": "https://github.com/eudiegosimoes/maisdelivery-meufuncionario",
+  "license": "Apache-2.0",
   "keywords": ["mais delivery", "delivery", "franquia", "cardapio", "painel", "automacao", "pt-br"]
 }
