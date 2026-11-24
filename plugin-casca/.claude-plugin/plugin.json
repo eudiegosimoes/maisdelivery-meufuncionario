@@ -1,6 +1,6 @@
 {
-  "name": "meufuncionario",
-  "version": "0.1.0",
+  "name": "meufuncionario-casca",
+  "version": "0.1.1",
   "description": "Meu Funcionário: opera o painel do Mais Delivery para o franqueado (precisa de licença ativa).",
   "author": { "name": "Meu Funcionário" }
 }

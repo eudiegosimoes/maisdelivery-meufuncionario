@@ -8,6 +8,11 @@
       "name": "meufuncionario",
       "source": "./plugins/meufuncionario",
       "description": "Opera o painel do Mais Delivery: cadastro de lojas, cardápios, taxas, motoboys, divulgação e auditoria."
+    },
+    {
+      "name": "meufuncionario-casca",
+      "source": "./plugin-casca",
+      "description": "Versão com licença: o conhecimento vem do servidor Meu Funcionário (precisa de MEUFUNC_LICENCA)."
     }
   ]
 }
