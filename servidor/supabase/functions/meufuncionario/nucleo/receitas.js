@@ -1,6 +1,6 @@
 // Base de conhecimento do Meu Funcionário: "pedido do franqueado -> caminho no painel do MD".
 // É aqui que mora o valor do produto. Fica só no servidor; o plugin do cliente nunca recebe o arquivo inteiro.
-// Fonte: docs/MAPA-DO-PAINEL.md e skills (varredura e testes de 24/11/2026).
+// Fonte: plugins/meufuncionario/docs/MAPA-DO-PAINEL.md e skills (varredura e testes de 24/11/2026).
 
 export const RECEITAS = [
   {

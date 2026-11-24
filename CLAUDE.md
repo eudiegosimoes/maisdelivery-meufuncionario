@@ -6,4 +6,4 @@
 - Painel do MD: uma loja por vez, ~6 s entre trocas de loja (Cloudflare).
 - Tour do painel: só leitura em lojas reais; testes só na loja de testes.
 - Antes de excluir, publicar ou mexer em dinheiro: perguntar.
-- Documentar cada tela nova em `docs/MAPA-DO-PAINEL.md` e cada aprendizado na skill correspondente.
+- Documentar cada tela nova em `plugins/meufuncionario/docs/MAPA-DO-PAINEL.md` e cada aprendizado na skill correspondente.

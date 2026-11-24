@@ -1,8 +1,12 @@
 {
   "name": "meufuncionario",
-  "description": "Seu funcionário para o Mais Delivery: cadastra lojas, sobe cardápios com fotos, ajusta taxas, ativa motoboys, divulga parceiros e audita a cidade.",
-  "version": "0.1.0",
+  "description": "Seu funcionário de IA para o Mais Delivery: cadastra lojas, sobe cardápios com fotos, cria pizza e açaí com níveis, ajusta preços e taxas, libera motoboys, faz divulgação e audita a cidade — no painel, pelo seu Chrome.",
+  "version": "0.2.0",
   "author": {
-    "name": "Meu Funcionário"
-  }
+    "name": "Diego Simões (@eudiegosimoes)",
+    "url": "https://instagram.com/eudiegosimoes"
+  },
+  "homepage": "https://github.com/eudiegosimoes/maisdelivery-meufuncionario",
+  "repository": "https://github.com/eudiegosimoes/maisdelivery-meufuncionario",
+  "keywords": ["mais delivery", "delivery", "franquia", "cardapio", "painel", "automacao", "pt-br"]
 }

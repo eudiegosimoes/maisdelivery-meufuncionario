@@ -1,6 +1,6 @@
 # Varredura do painel (só leitura)
 
-Refaz `docs/ROTAS-DO-PAINEL.md` e `../rotas.json` quando o painel mudar.
+Refaz `plugins/meufuncionario/docs/ROTAS-DO-PAINEL.md` e `../rotas.json` quando o painel mudar.
 
 1. `node coletor.mjs <pasta-temporaria>` — servidor local em 127.0.0.1:47801 que grava JSONL e serve o `varredor.js`.
 2. Na aba do painel (Claude in Chrome), já logado:

@@ -120,7 +120,7 @@ const limpa = s => s
   .replace(/\d{8,}/g, '#')
   .replace(/https?:\/\/(chat\.whatsapp|join\.slack|drive\.google|www\.dropbox)[^\s"'|)<]*/g, '<link-externo>')
   .replace(/login\.php\?[^\s"'|)<]*/g, 'login.php');
-fs.writeFileSync(path.join(REPO, 'docs', 'ROTAS-DO-PAINEL.md'), limpa(L.join('\n') + '\n'));
+fs.writeFileSync(path.join(REPO, 'plugins', 'meufuncionario', 'docs', 'ROTAS-DO-PAINEL.md'), limpa(L.join('\n') + '\n'));
 
 const json = { gerado: new Date().toISOString().slice(0, 10), paginas: {}, js: {}, operacoes: {} };
 for (const [k, v] of Object.entries(pags)) json.paginas[k] = { perfil: v.perfil, vistaEm: v.ctxs, ...v.rec, ctx: undefined };

@@ -25,3 +25,4 @@ Thumbs.db
 servidor/local/licencas-teste.json
 servidor/local/minha-chave.txt
 servidor/local/sql-para-colar.sql
+servidor/supabase/.temp/

@@ -1,18 +1,19 @@
 {
   "name": "maisdelivery-meufuncionario",
   "owner": {
-    "name": "Meu Funcionário"
+    "name": "Diego Simões (@eudiegosimoes)",
+    "url": "https://instagram.com/eudiegosimoes"
   },
   "plugins": [
     {
       "name": "meufuncionario",
       "source": "./plugins/meufuncionario",
-      "description": "Opera o painel do Mais Delivery: cadastro de lojas, cardápios, taxas, motoboys, divulgação e auditoria."
+      "description": "Grátis. Opera o painel do Mais Delivery: lojas, cardápios com fotos, pizza/açaí com níveis, preços, taxas, motoboys, divulgação e auditoria."
     },
     {
       "name": "meufuncionario-casca",
       "source": "./plugin-casca",
-      "description": "Versão com licença: o conhecimento vem do servidor Meu Funcionário (precisa de MEUFUNC_LICENCA)."
+      "description": "Opcional/experimental: versão que busca as receitas num servidor com licença (MEUFUNC_LICENCA)."
     }
   ]
 }
