@@ -31,3 +31,17 @@ description: Cadastra e ativa motoboys/entregadores no Mais Delivery. Use para "
 - Campos obrigatórios e documentos.
 - Como ativar/bloquear e vincular a lojas ou à cidade.
 - Como funciona o repasse/pagamento ao motoboy.
+
+## Interno × externo (testado 24/11/2026)
+- **Externo** = motoboy da cidade, atende todas as lojas: cadastrar no **gerencial** (`entregador.php`).
+  É o caso normal (lojas com `tpEntregadores=2`, "Externos (Mais Delivery)").
+- **Interno** = motoboy da própria loja: só com `tpEntregadores=1` na configuração da loja; senão a tela bloqueia.
+- E-mail não pode repetir entre funcionário e entregador. O franqueado/motoboy digita a senha (nunca o Claude);
+  limpar o autopreenchimento do Chrome antes.
+- Status (op 76): 1 Online, 2 Offline, 0 Inativo, -2 Em análise. Inativo pode sumir da lista da loja.
+- Lista do gerencial alterna modo "em análise"/demais pela sessão (`entregadores_em_analise.php`).
+- Externo tem filtros: lojas permitidas / proibidas, formas de pagamento que não aceita, bairros permitidos (vazio = tudo).
+- Títulos trocados no gerencial: `entregador.php` = ativos; `entregadores_em_analise.php` = todos (inclui em análise).
+- ⚠️ Inativo some de todas as listas: anotar o ID antes de inativar.
+- ⚠️ Editar entregador pede validação do telefone por SMS/WhatsApp (código vai para o motoboy).
+- Cadastro novo de motoboy: preencher tudo, status "Em análise", e o motoboy (ou franqueado) digita a senha.

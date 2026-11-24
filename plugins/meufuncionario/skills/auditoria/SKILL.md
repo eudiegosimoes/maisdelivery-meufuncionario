@@ -30,3 +30,9 @@ description: Audita as lojas de uma cidade no Mais Delivery — status, horário
 - Feriados: `feriados.php` (op 139 sugere os feriados do ano).
 - Comentários dos clientes: `avaliacao_remover.php` (gerencial), `avaliacao.php` (lojista).
 - Tudo em `docs/ROTAS-DO-PAINEL.md`.
+
+## Relatórios — como gerar (testado 24/11/2026)
+POST `relatorio.php` só com `hdnRelatorioSel`, `idRelatorio`, `dtInicio`, `dtFim`, `hrInicio`, `hrFim`.
+Período máximo de 1 ano (acima disso volta vazio sem aviso). 23, 24 e 40 só saem como arquivo
+(`idFormatoSaida` 0 PDF / 1 CSV / 2 Excel). Colunas de cada relatório: `docs/MAPA-DO-PAINEL.md`.
+Dashboard da loja: `dashboard_ajax.php` ops 1–8 (semanal, mensal, top produtos, top clientes, comparativos).

@@ -130,6 +130,93 @@ restaurados sem diferença; loja ficou FECHADA o tempo todo.
 | Funcionário / Entregador | **Não testado de propósito**: criam conta de login com senha. |
 | Comanda | Menu abre `/comanda/` (app separado de garçom). |
 
+## Testes — parte 2 (24/11/2026): relatórios, pedidos, dashboard, chat
+
+### Relatórios do lojista (`relatorio.php`, 21 tipos)
+- POST com **só os filtros visíveis**: `hdnRelatorioSel`, `idRelatorio`, `dtInicio`, `dtFim`,
+  `hrInicio`, `hrFim` (`dd/mm/aaaa`, `hh:mm`). Mandar os outros filtros com "0" zera o resultado.
+- ⚠️ Período **máximo de 1 ano**; acima disso volta "Nenhum registro" sem avisar.
+- Quais filtros cada relatório usa: POST `ajax_relatorio_filtro.php` `idRelatorio` → classes `.clsFiltro…`.
+- Saem na tela (tabela com Copiar/CSV/Excel/PDF/Imprimir), exceto **23, 24 e 40**, que só saem
+  como arquivo (`idFormatoSaida` 0 PDF, 1 CSV, 2 Excel).
+
+| id | Relatório | Colunas |
+|---|---|---|
+| 3 | Pedidos concluídos – detalhado | Estabelecimento, Data, Número, ID usuário, Telefone, Cliente, Produtos, Entrega, Total, Tipo entrega, Pagamento, Observação |
+| 6 | Pedidos concluídos – consolidado | Estabelecimento, Qtd pedidos, Cupom adm, Promoção adm, Produtos, Entregas, Total |
+| 8 | Produtos mais vendidos | ID, Estabelecimento, Produto, Qtd, Custo, Custo total, Médio, Total vendas |
+| 9 / 43 | Entregas por entregador (analítico / sintético) | Entregador, datas, pedido, lançado, pagamento, frete grátis, valores, endereço, bairro |
+| 10 / 52 | Cupons utilizados (detalhado / sintético) | Data, pedido, usuário, gerado por, cupom, tipo, cashback/indique, desconto, valores |
+| 11 | Usuários mais fiéis | Criação, Cliente, E-mail, DDD, Telefone, Qtd pedidos, Totais |
+| 12 | Tempo de entregas | Pedido, Histórico |
+| 14 | Pedidos cancelados | Data, Estabelecimento, Pedido, Pagamento, Total, Tipo, Motivo, Descrição |
+| 23 / 24 | Pedidos concluídos sintético / analítico | (arquivo) totais de produtos, entregas, cupons, promoções; origem, situação |
+| 25 | Produtos sem estoque | Estabelecimento, Produto, Status, Estoque |
+| 29 | Cancelamentos por tipo | Concluídos, Cancelados (loja / gerencial / falta de atendimento / cartão recusado), Taxa |
+| 30 | Adicionais mais vendidos | ID, Nome, Qtd, Custo, Médio, Total |
+| 40 | Avaliação de entregadores | (arquivo) Entregador, Qtd pedidos, Qtd avaliações, Nota média |
+| 55 | Histórico situação pedidos | Estabelecimento, Número, Data, Situação, Pagamento, Cliente, Valor, Total, Obs |
+| 5, 34, 45, 59 | Avaliações usuários, Sabores, Promoções mais vendidas, Opções sem estoque | sem dados na loja de testes |
+
+### Dashboard (`dashboard.php`)
+Números vêm de `dashboard_ajax.php` (POST `nrOperacao` próprio): 1 semana × semana anterior
+(`data_fim`), 2 12 meses (`mes_fim`, `ano_fim`), 3 top 10 produtos do mês, 4 top 10 clientes,
+5 comparativo anual (`ano`), 6 comparativo semanal (`data_fim`, `ano_comparativo`), 7/8 mensais.
+
+### Pedidos
+- Lista × kanban: op **101** `flgTipoTelaPedido` 0 lista (`pedidos.php`) / 1 kanban — **grava preferência**; voltar para 1.
+  Lista filtra por `idStatus`, `dtInicio`, `dtFim`. Kanban: "Ver filtro" (`idSituacao`, datas → `buscaPedidoPeriodoSituacao()`) e busca `#inPesquisa`.
+- Detalhes: `detalhes_pedido.php?id=<base64(idPedido)>` com abas Pedido, Detalhes (itens, sabores,
+  adicionais, opções), Cliente, Histórico de alterações e **Chat** (só pedido do app).
+- Mudar situação: o select grava na hora e recarrega (op 24). Ciclo testado num pedido de balcão:
+  Verificando → Na fila → Em andamento → Pronto → Entrega realizada (cada passo vai para o histórico).
+- Impressão em PDF: `tcpdf/pedido/pedido_impressao.php?idPedido=<b64>` e `impressao_cozinha.php`;
+  "Impressão Completa/Cozinha" no kanban manda para o app de impressão do Windows.
+- Pedido do app (visto ao vivo, só leitura) tem ainda: trocar pagamento (op 79), tipo de entrega (op 56),
+  **entregador** (op 11), **Alterar Subtotal** (op 128, com motivo), **Reembolso Pagamento Online**,
+  cancelamento iFood (ops 133/135/138). Cartão pode mostrar "Avisar Estabelecimento" (WhatsApp para a loja),
+  "Ver Pagamento Online" (op 157), "Visualizar Comprovante" (PIX offline) e a etiqueta "Possui bebida".
+- Chat: janelas flutuantes por pedido (`chat_ativo_painel.js`), serviço de chat à parte com token por
+  pedido; canais Estabelecimento e Entregador; op 123 lista chats ativos e mensagens pendentes.
+
+### Funcionário e entregador (testado com o franqueado digitando a senha)
+- **Funcionário** (`funcionario.php`): nome, e-mail, senha, DDD/telefone, ativo, validar conta.
+  Nasce com **todas as permissões** (77 telas: Web Painel Empresa + App Empresa Android/iOS; 21 relatórios).
+  Permissões em `funcionario_permissoes.php?id=<b64>`: POST com `arr_telas_sistema_sel` e
+  `arr_relatorios_sistema_sel` (ids separados por vírgula). Editar: senha vazia mantém a atual.
+  Excluir: op 178 avisa se é o **último funcionário ativo** (a loja perderia o acesso) e depois `action=del`.
+- ⚠️ **E-mail único** entre funcionários e entregadores (ops 115 e-mail / 116 telefone checam).
+- ⚠️ O Chrome **autopreenche a senha salva do painel** no campo Senha: limpar antes de salvar.
+- **Entregador interno** (tela da loja, `entregador.php`): só existe se a loja estiver com
+  `tpEntregadores=1`; com 2 (Mais Delivery) a tela avisa e volta para os pedidos. Abas: Entregador,
+  Dados (CPF/CNH…), Motocicleta, Endereço, Disponibilidade (3 turnos/dia), Contratos.
+  Status op 76: 1 Online, 2 Offline, 0 Inativo, -2 Em análise. ⚠️ Criado como Inativo, **sumiu da
+  lista da loja** (o e-mail continua "em uso").
+- **Entregador externo** (da cidade, atende todas as lojas): cadastrado no **gerencial** `entregador.php`
+  (testado: criado "Em análise", status, edição, exclusão). Tem a mais que o interno:
+  "Permitir entregas nestes estabelecimentos" (`idFiltroRestaurantePermitido`), "Não permitir entregas
+  nestes estabelecimentos" (`idRestaurantes`), "Não aceita quais formas de pagamento" (`idPagamentos`),
+  "Permitir entregas nestes bairros" (`idBairrosFiltro`) — vazio = sem restrição.
+- ⚠️ Listas do gerencial com **títulos trocados**: `entregador.php` mostra os ativos (Online/Offline) com
+  título "Entregadores em análise"; `entregadores_em_analise.php` (redireciona p/ `entregador.php?id=MQ==`)
+  mostra todos, inclusive "Em análise". A tabela pagina: usar a busca do DataTables.
+- ⚠️ Entregador **Inativo (0) some de todas as listas** — para editar/excluir depois, guardar o ID antes
+  de inativar. (Um interno de teste ficou assim na loja de testes, inativo e invisível.)
+- ⚠️ **Salvar edição do entregador exige validar o telefone**: janela "Enviar via SMS / WhatsApp", o
+  código vai para o celular do motoboy (op 161). Não dá para editar sem ele.
+- Documentos do entregador no Google Drive (ops 106–111): nesta franquia `drivePermissao: false`.
+- Telas por permissão que não estão no menu: `robozinho.php` ("O Robozinho", parece licença à parte —
+  no gerencial "Minhas Licenças Robozinho" = `marketplace_api.php`), `atendimento_suporte.php`
+  (chamados), mapa de entregadores. Na loja de testes `robozinho.php` e `atendimento_suporte.php` voltam vazias.
+
+### Outros
+- Avaliações (lojista): responder = escrever na caixa e sair do campo → op 5 (`idAvaliacao`, `dsResposta`).
+  Não testado: a única avaliação da loja de testes é de cliente real.
+- Cobranças da loja: `aviso_cobranca.php` (total em aberto), `listar_cobrancas_estabelecimento.php`
+  ("Ver" = `action=edt`, `idCobranca` → valor, descrição, link de pagamento).
+- Divulgar Loja: QR em PDF `tcpdf/pedido/qr_code_loja.php?id=`, link `/web/loja.php?id=`, WhatsApp.
+- Comanda (`/comanda/`): app separado com login próprio de garçom — fora do escopo por decisão do franqueado.
+
 ## Tour 1 — Gerencial da cidade (24/11/2026, Aripuanã)
 
 Feito só com GET (fetch + leitura do HTML), 6 s entre telas, nada salvo.
