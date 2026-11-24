@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "meufuncionario": {
+      "type": "http",
+      "url": "${MEUFUNC_URL:-https://fjyibbybafufmfudawxu.supabase.co/functions/v1/meufuncionario}",
+      "headers": {
+        "Authorization": "Bearer ${MEUFUNC_LICENCA}"
+      }
+    }
+  }
+}

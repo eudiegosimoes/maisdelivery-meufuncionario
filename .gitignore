@@ -20,3 +20,8 @@ saida/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# chaves de teste do servidor local
+servidor/local/licencas-teste.json
+servidor/local/minha-chave.txt
+servidor/local/sql-para-colar.sql
