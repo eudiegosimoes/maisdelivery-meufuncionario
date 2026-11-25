@@ -7,6 +7,11 @@
 São **7 passos** e leva uns **15 minutos**. Você faz **uma vez só**.
 Não precisa saber programar.
 
+> ⚠️ **Atenção: não peça para o Claude "instalar a skill" numa conversa comum.** Ele não consegue.
+> A instalação é feita **por você**, na aba **Code** do aplicativo do Claude, colando **2 comandos** (Passo 4).
+> O Meu Funcionário é um **plugin**: um pacote com 6 skills e as ferramentas que elas usam.
+
+
 > Os cartões coloridos são **ilustrações** para te guiar. Onde aparece **📸 Tela de verdade**, é o print real do site.
 
 ---
@@ -152,6 +157,7 @@ Ele vai:
 |---|---|
 | O Claude respondeu algo genérico, sem conhecer o painel | Abra uma **nova sessão**; se continuar, feche e abra o aplicativo |
 | Ele diz que não consegue acessar o Chrome | Confira se a extensão **Claude in Chrome** está instalada e logada |
+| Você pediu "instala a skill" e o Claude disse que não consegue | É normal: a instalação é sua, na aba **Code**, com os 2 comandos do Passo 4 |
 | Você está usando o Claude pelo site | Use o **aplicativo do computador** (Passo 2) |
 | O painel pediu login de novo | Faça o login você mesmo e peça para ele continuar |
 

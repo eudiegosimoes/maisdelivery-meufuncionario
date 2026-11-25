@@ -163,6 +163,11 @@ Você **não precisa saber programar**. Precisa só conversar.
 
 Leva uns 15 minutos. Você só faz uma vez.
 
+> ⚠️ **Atenção: não peça para o Claude "instalar a skill" numa conversa comum.** Ele não consegue.
+> A instalação é feita **por você**, na aba **Code** do aplicativo do Claude, colando **2 comandos** (Passo 4).
+> O Meu Funcionário é um **plugin**: um pacote com 6 skills e as ferramentas que elas usam.
+
+
 ### 🎬 [Assistir ao vídeo do tutorial (menos de 1 minuto, com narração)](assets/tutorial/tutorial-meu-funcionario.mp4)
 
 ### 👉 [Abrir o tutorial ilustrado, com uma imagem em cada passo](TUTORIAL.md)
