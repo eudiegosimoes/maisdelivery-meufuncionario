@@ -1,5 +1,9 @@
 # Cadastro em lote: Mais Delivery (MD) + 1menu
 
+> **Nota:** este playbook conta como foi feito em **Aripuanã (MT)**. Os nomes de lojas, ids e o 1menu são exemplos do autor.
+> As ferramentas (`md-tools.js`) hoje leem a cidade, o CEP e a franquia do painel de quem está logado, então o mesmo roteiro vale para qualquer cidade.
+> O **1menu** é outro produto do autor: quem não usa pode pular tudo que fala dele.
+
 Passo a passo que funcionou em Aripuanã (09/11/2026), para preparar uma cidade
 inteira antes de uma inauguração: achar as lojas, achar os cardápios, cadastrar
 no MD e no 1menu com fotos, e deixar tudo pronto para "só ligar".

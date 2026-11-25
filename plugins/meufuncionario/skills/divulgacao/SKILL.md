@@ -20,7 +20,7 @@ description: Faz a divulgação dos parceiros da cidade — arte "Parceiro Confi
 
 ## Feed
 - Arte 4:5 (1080×1350, `feed.ps1`).
-- Legenda: nome + "em Aripuanã" na 1ª linha, produtos reais do cardápio, bairro, chamada para o app e hashtags locais. Nada inventado (sem horário, preço ou "melhor da cidade").
+- Legenda: nome + "em <nome da cidade>" na 1ª linha (perguntar a cidade ao franqueado ou ler com `MD.cidade()`), produtos reais do cardápio, bairro, chamada para o app e hashtags locais. Nada inventado (sem horário, preço ou "melhor da cidade").
 - Colar a legenda com Ctrl+V real (`clip.ps1` coloca na área de transferência); colar por script embaralha o editor.
 - Perguntar o ritmo ao franqueado (tudo de uma vez derruba o alcance).
 

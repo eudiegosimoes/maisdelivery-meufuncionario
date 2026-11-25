@@ -1,3 +1,4 @@
+-- OPCIONAL: só serve para quem usa o 1menu (outro produto do autor). Franqueados que usam só o Mais Delivery podem ignorar este arquivo.
 -- Cria lojas no 1menu ligadas a lojas JÁ criadas no MD (Mais Delivery).
 -- Trocar: city_id (19 = Aripuanã), md_app_city, o marketplace '842' (Aripuanã),
 -- a tabela de bairros do MD e a lista "bairro:taxa".

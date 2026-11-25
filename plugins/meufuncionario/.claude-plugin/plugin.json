@@ -1,7 +1,7 @@
 {
   "name": "meufuncionario",
   "description": "Seu funcionário de IA para o Mais Delivery: cadastra lojas, sobe cardápios com fotos, cria pizza e açaí com níveis, ajusta preços e taxas, libera motoboys, faz divulgação e audita a cidade — no painel, pelo seu Chrome.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Diego Simões (@eudiegosimoes)",
     "url": "https://instagram.com/eudiegosimoes"

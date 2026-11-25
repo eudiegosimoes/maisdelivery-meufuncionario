@@ -17,7 +17,7 @@ description: Cadastra uma loja nova no painel do Mais Delivery (e no 1menu, se h
 2. Montar os dados: nome, descrição, e-mail, telefone (DDD separado), segmento, bairro, rua, número, coordenada (`lat,lng`), tempo de entrega, modo de entrega (1 entrega, 2 balcão, 3 ambos).
 3. Horário: o MD exige horário em todos os dias. Dia fechado: usar `00:01–00:02` e depois limpar pelo gerencial (`estabelecimento.php` action=edt → upd sem `dsImagem`). Fechar às 00:00 ou 00:01 é recusado.
 4. Logo: converter para PNG 800×800 antes de enviar.
-5. `MD.criarLoja(L, logo)` — já liga o integrador (op 83 + op 85, empresa 38).
+5. `MD.criarLoja(L, logo)` — a cidade, o CEP e o código da franquia são **lidos do painel de quem está logado** (`MD.cidade()`), então funciona em qualquer cidade. Se a cidade tiver mais de um CEP, passar `L.cep`. O integrador só é ligado se o franqueado pedir: passar `L.integrador` com o id da empresa integrada (ops 83 + 85); sem isso, a loja fica sem integrador.
 6. Taxas: copiar de uma loja vizinha parecida (ver skill `taxas-bairros`).
 7. Pagamento sem Pix conhecido: dinheiro + maquininha (`MD.configurar`).
 8. Status **Fechado** até o lojista começar: op 18, `flgAtivo=2`.

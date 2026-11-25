@@ -267,7 +267,7 @@ Ele pede confirmação antes de qualquer ação importante e confere depois. Mes
 ferramenta independente: **teste primeiro numa loja de testes** e acompanhe o que ele faz.
 
 **Funciona em qualquer cidade do Mais Delivery?**
-Sim — o painel é o mesmo para todas as franquias.
+Sim. O painel é o mesmo para todas as franquias, e as ferramentas **leem a cidade, o CEP e o código da franquia do seu próprio painel** — nada fica preso à cidade do autor.
 
 **Funciona no Windows e no Mac?**
 Sim, onde o aplicativo do Claude e o Chrome funcionarem.
